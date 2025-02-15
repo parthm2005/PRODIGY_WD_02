@@ -55,6 +55,7 @@ function recordlap(){
     if(running){
         let lapTime=formatTime(hours,minutes,seconds)
         let lapItem=document.createElement('li')
+        lapItem.style.fontSize="25px"
         lapItem.textContent=`Lap ${lapCounter}: ${lapTime}`
         laplist.appendChild(lapItem)
         lapCounter++
