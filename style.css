@@ -1,0 +1,87 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+}
+
+.stopwatch-container {
+    text-align: center;
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+}
+
+.display {
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.buttons button {
+    font-size: 18px;
+    padding: 12px 25px;
+    border-radius: 25px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    transition: background 0.3s ease;
+}
+
+#start {
+    background: #28a745;
+}
+
+#start:hover {
+    background: #218838;
+}
+
+#reset {
+    background: #dc3545;
+}
+
+#reset:hover {
+    background: #c82333;
+}
+
+#lap {
+    background: #007bff;
+}
+
+#lap:hover {
+    background: #0069d9;
+}
+
+.lap {
+    margin-top: 30px;
+}
+.lap ul{
+    list-style-type: none;
+}
+#laplist {
+    list-style-type: none;
+    padding: 0;
+}
+
+#laplist li {
+    font-size: 18px !important;
+    margin: 5px 0;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #333;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#laplist li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
